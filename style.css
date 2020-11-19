@@ -1,0 +1,94 @@
+html, body, div {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+html {
+    /* http://projects.verou.me/css3patterns/#weave */
+    background:
+        linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+        linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+        background-color:#708090;
+        background-size: 64px 128px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+}
+
+#controls {
+    background-color: gray;
+    border-bottom: 1px solid black;
+}
+
+#controls .btns {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#controls .btns button {
+    width: 30%;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#controls form {
+    background-color: black;
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#controls form input[type="number"] {
+    display: inline-block;
+    line-height: 20px;
+    border: none;
+    padding: 0;
+    flex: 1 0 auto;
+}
+
+#grid {
+    max-width: 960px;
+    width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    width: fit-content;
+    height: fit-content;
+}
+
+.square {
+    display: inline-block;
+    border: none;
+    background-color: white;
+    transition: 0.8s;
+}
+
+.color-red {
+    background-color: red;
+}

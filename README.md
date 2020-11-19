@@ -1,0 +1,1 @@
+Simple ETCH-A-SKETCH browser game with pure CSS and JS.
